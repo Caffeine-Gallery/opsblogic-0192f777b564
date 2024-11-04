@@ -1,0 +1,13 @@
+type BlogPost = 
+ record {
+   content: text;
+   id: nat;
+   timestamp: int;
+   title: text;
+ };
+service : {
+  createPost: (text, text) -> (BlogPost);
+  getAllPosts: () -> (vec BlogPost) query;
+  getPost: (nat) -> (opt BlogPost) query;
+  initialize: () -> ();
+}
