@@ -1,5 +1,7 @@
 body {
     background-color: #f8f9fa;
+    color: #2c3e50;
+    line-height: 1.6;
 }
 
 .navbar {
@@ -11,6 +13,8 @@ body {
     border: none;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     transition: transform 0.2s ease-in-out;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
 }
 
 .card:hover {
@@ -19,14 +23,28 @@ body {
 
 .card-title {
     color: #2c3e50;
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+}
+
+.content {
+    color: #34495e;
+    font-size: 1.1rem;
 }
 
 .content p {
-    color: #34495e;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.content ul, .content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.content li {
+    margin-bottom: 0.5rem;
 }
 
 #loading {
@@ -38,6 +56,11 @@ body {
     height: 3rem;
 }
 
+.text-muted {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
 @media (max-width: 768px) {
     .card-title {
         font-size: 1.5rem;
@@ -45,5 +68,9 @@ body {
     
     .container {
         padding: 0 1rem;
+    }
+
+    .content {
+        font-size: 1rem;
     }
 }
